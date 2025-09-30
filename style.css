@@ -30,10 +30,75 @@
 
 /* General Styles */
 body {
-  font-family: system-ui, "Roboto", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto", system-ui, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5rem;
 }
 
 .icon {
-  width: 45px;
+  width: 30px;
   height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.5);
+}
+
+/* Section : HERO */
+section.hero {
+  background-color: aquamarine;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.hero div.profile {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  height: 500px;
+  width: 300px;
+  margin-bottom: 2em;
+}
+
+section.hero div.profile h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  font-size: 64px;
+  line-height: normal;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  color: white;
+  padding: 1rem;
+}
+
+img.profile-pic {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+section.hero .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.hero h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 5rem;
+}
+
+.social-icons {
+  display: flex;
+  margin: 32px;
+  gap: 16px;
 }
