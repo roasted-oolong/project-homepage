@@ -32,3 +32,8 @@
 body {
   font-family: system-ui, "Roboto", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.icon {
+  width: 45px;
+  height: auto;
+}
